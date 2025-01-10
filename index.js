@@ -53,6 +53,10 @@ app.delete('/data/:id', (req, res) => {
     
 })
 
+app.get('/username' , (req, res) => {
+    res.status(200).send("Shubham Gupta")
+})
+
 
 app.listen(port, () =>{
     console.log(`Server is running at Port: ${port}...`)
